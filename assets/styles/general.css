@@ -1,0 +1,15 @@
+.rect {
+    background-color: #ffecec2c;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+
+    width: 90px;
+    max-width: 960px;
+    margin: 200px auto 0 auto;
+
+    padding: 30px;
+    border-radius: 30px;
+    border: 5px solid #0000009a;
+}

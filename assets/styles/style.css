@@ -1,0 +1,82 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+/* STYLE TITLE */
+h1, p {
+  font-family: 'Staatliches', sans-serif;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px; /* Menambah jarak antar huruf bikin tulisan terasa kurang padat */
+  opacity: 0.9; /* Mengurangi kepekatan warna */
+}
+
+.space {
+    height: 100px;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /*mengunci scroll menyamping*/
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img {
+    background-image: url('../background.svg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+}
+
+.center-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+
+    width: 60%;
+
+    transition: all 0.3s ease;
+}
+
+.center-img:hover {
+    transform: scale(1.05);
+    transform: translateY(-10px);
+}
+
+.btn-img {
+    width: 50%;
+}
+
+.btn-img {
+    width: 40%;
+
+    transition: all 0.3s ease;
+}
+
+.btn-img:hover {
+    transform: translateY(-10px);
+}
+
+section {
+    padding: 30px;
+}
+
+#project-btn {
+    transform: translateX(30px);
+}
+
+#experience-btn {
+    transform: translateX(970px);
+}
+
+#hobby-btn {
+    transform: translateX(100px);
+}
+
+#strawberry {
+    transform: translateX(1350px);
+}
