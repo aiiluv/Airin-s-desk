@@ -5,11 +5,51 @@
     display: flex;
     flex-direction: column;
 
-    width: 90px;
     max-width: 960px;
     margin: 200px auto 0 auto;
 
     padding: 30px;
     border-radius: 30px;
     border: 5px solid #0000009a;
+}
+
+.infinite-carousel {
+  margin: 100px auto;
+  width: 100%;
+  border: none;
+  display: flex;
+  overflow: hidden; /* Biar teks yang keluar area terpotong rapi */
+  user-select: none;
+
+  background-color: blue;
+  height: 60px;
+}
+
+.group-carousel {
+  display: flex;
+  align-items: center;
+  
+  flex-shrink: 0;
+  gap: 3rem;
+
+  padding-right: 3rem;
+
+  animation: spin 15s linear infinite;
+}
+
+/* Menggunakan transform agar support di semua browser */
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.group-carousel h1 {
+  font-family: 'Staatliches', sans-serif;
+  color: #fff;
+  white-space: nowrap; /* Mencegah teks turun ke bawah */
+  margin: 0;
 }
