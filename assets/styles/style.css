@@ -17,7 +17,7 @@ p, button {
 }
 
 .space {
-    height: 100px;
+    height: 10rem;
 }
 
 html, body {
@@ -29,12 +29,36 @@ html, body {
 }
 
 .bg-img {
+    background-image: url('../background-new.svg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+}
+
+.bg-img2 {
     background-image: url('../background.svg');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
     min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .bg-img {
+    background-image: url('../test-bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+  }
+
+  .space {
+    height: 5rem;
+  }
 }
 
 .center-img {
@@ -49,6 +73,22 @@ html, body {
 }
 
 .center-img:hover {
+    transform: scale(1.05);
+    transform: translateY(-10px);
+}
+
+#img-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem auto 15rem auto;
+
+    width: 60%;
+
+    transition: all 0.3s ease;
+}
+
+#img-title:hover {
     transform: scale(1.05);
     transform: translateY(-10px);
 }
@@ -132,3 +172,4 @@ section {
 #btn-connect:hover {
     transform: translateY(-10px);
 }
+
